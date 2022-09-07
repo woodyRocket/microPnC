@@ -27,8 +27,8 @@ Any updates will be added soon.
 ### PREPARATIONS
 
 - A development board and a LED board (given)
-- A programmer ST Link v2 (need to buy)
-- USB to Uart cable (need to buy)
+- A programmer ST Link v2 (got it)
+- USB to Uart cable (got it)
 
 ***Anything needed, please update***
 
