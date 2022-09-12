@@ -49,8 +49,15 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 - Power shutdown (Temperature sensor)
 - Timer changing Remotely
 - Saved latest timer in case the power cutoff
+- Running Mode: Automatic and Manual
 
 ***Add more***
+
+### USEFUL LINKS (Check it out to save time for setup)
+
+1. [Clone ST-Link V2 Setup] (https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Programming-an-STM32F103XXX-with-a-generic-%22ST-Link-V2%22-programmer-from-Linux)
+2. [STM32-base (ignore PlatformIO)](https://stm32-base.org/guides/)
+3. [Setup STM32 Long video](https://www.youtube.com/watch?v=xsYIh1sunso&list=PLdMwxwrniaL81t6xhA2no3skrAzPL5v7s&index=2&ab_channel=iforce2d)
 
 ### REFERENCES
 
