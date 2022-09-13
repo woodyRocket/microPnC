@@ -11,7 +11,7 @@ Any updates will be added soon.
 ### DEADLINES
 
 - 13/09/2022: Please write a **proposal** including all possible features for the Traffic Light project (the more the better). Have a **plan** for your group to work in 12 weeks.
-- 
+- Detailed plan will be posted here [**PLAN**](https://docs.google.com/spreadsheets/d/1lYaAuqjyAvRWOp0LWpBjZ417HS-iejlbVqwVeRNuYsQ/edit?usp=sharing)
 
 ### MEMBERS
 
@@ -53,7 +53,9 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 
 ***Add more***
 
-### USEFUL LINKS (save time for setup)
+### USEFUL LINKS 
+
+*It actually saves time for setup*
 
 1. [Clone ST Link V2 Setup](https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Programming-an-STM32F103XXX-with-a-generic-%22ST-Link-V2%22-programmer-from-Linux)
 2. [STM32-base (ignore PlatformIO)](https://stm32-base.org/guides/)
