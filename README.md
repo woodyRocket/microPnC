@@ -50,6 +50,8 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 - Timer changing Remotely
 - Saved latest timer in case the power cutoff
 - Running Mode: Automatic and Manual
+- Using another color of light to warning of the appearance of ambulances
+- Using sound for the blind whenever the green light for pedestrians active.
 
 ***Add more***
 
