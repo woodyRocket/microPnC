@@ -46,14 +46,29 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 
 ### FEATURES 
 
-- Power shutdown (Temperature sensor)
-- Timer changing Remotely
-- Saved latest timer in case the power cutoff
-- Running Mode: Automatic and Manual
-- Using another color of light to warning of the appearance of ambulances
-- Using sound for the blind whenever the green light for pedestrians active.
+1. Pedestrian crossing signal 
 
-***Add more***
+    Normally, the traffic light has 3 LEDs with hidden timer to control the vehicles at the 4-way intersection. Instead of letting pedestrians walk across the street freely, there is an another LED (beside 3-LED traffic light) with timer to indicate whether they can walk across. The traffic light takes external input from human's interaction by button and integrates to normal traffic light. The pedestrians can walk first when they see the extra LED turning on in the opposite streetview, then the vehicles can move in consecutive order. In case there is no external input, the traffic light works as normal. 
+    
+    In terms of equipment, we may need 5 LEDs (3 front for normal traffic light, 1 front for pedestrian signal, and 1 rear for opposite vehicles) and 1 button for human interactive input.
+    
+    How it work (rules):
+  
+2. Working mode and Stall mode
+    
+    Usually, the traffic light has its working mode during daylight and stall mode during night. The working mode is set from 4AM to 12AM, when a large amount of the vehicles driving across the road. It composes of normal traffic light and be compatible with pedestrian crossing LED. The rest of the day (12AM to 4AM), the traffic light is set in the stall mode,  
+
+3. Brightness modifier depending on weather condition
+
+
+4. Automatic and manual changing timer
+
+
+5. Memory in critical events
+
+
+6. Crossing red light detection
+
 
 ### USEFUL LINKS 
 
