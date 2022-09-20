@@ -58,7 +58,7 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
     
     Usually, the traffic light has its working mode during daylight and stall mode during night. The working mode is set from 4AM to 12AM, when a large amount of the vehicles driving across the road. It composes of normal traffic light and be compatible with pedestrian crossing LED. In the rest of the day (12AM to 4AM), the traffic light is set in the stall mode, and only yellow LED is turned on without timer while other LEDs are blinking. The crossing LED is turned off during stall mode, and the pedestrians have to improvisionally crossing the street (negotiate with vehicles xD)
     
-    We want to activate and deactivate stall mode by Real-time clock signal, and automatically switches at 12AM and 4AM.
+    We want to activate and deactivate stall mode by Real-time clock signal, and automatically switch at 12AM and 4AM.
 
 3. ***Auto-Brightness modification*** 
 
