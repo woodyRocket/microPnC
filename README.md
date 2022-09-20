@@ -72,7 +72,7 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 
 5. ***Memory in critical events***
 
-    In the sudden and critical events, the traffic light has the backup memory to store the latest state of traffic light including timer, LEDs, brightness, automatic or manual mode, working or stall mode, etc. Basically, instead of interacting with processor, we can use DMA in the MCU to directly access the memory, bypassing the processor. Luckily, in the STM32F103RT6, we have internal SRAM and internal Flash memory to store data, and this feature relies solely on the design, architecture and coding. Hence, we do not need external peripherals.
+    In the sudden and critical events, the traffic light has the backup memory to store the latest state of traffic light including timer, LEDs, brightness, automatic or manual mode, working or stall mode, etc. Basically, instead of interacting with processor, we can use DMA in the MCU to directly access the memory, bypassing the processor. Luckily, in the STM32F103RBT6, we have internal SRAM and internal Flash memory to store data, and this feature relies solely on the design, architecture and coding. Hence, we do not need external peripherals.
     
 6. ***Crossing red light detection***
 
