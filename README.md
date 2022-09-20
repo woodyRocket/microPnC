@@ -86,7 +86,7 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 2. [STM32-base (ignore PlatformIO)](https://stm32-base.org/guides/)
 3. [Setup STM32 Long video](https://www.youtube.com/watch?v=xsYIh1sunso&list=PLdMwxwrniaL81t6xhA2no3skrAzPL5v7s&index=2&ab_channel=iforce2d)
 4. [Basic output pin LED explanation](https://www.youtube.com/watch?v=mOGqNwTjEGM&t=1226s&ab_channel=TerminalTwo)
-Memory in critical events
+
 ### REFERENCES
 
 \[1\]
