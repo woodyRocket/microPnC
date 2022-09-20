@@ -46,7 +46,7 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 
 ### FEATURES 
 
-1. Pedestrian crossing signal 
+1. ***Pedestrian crossing signal*** 
 
     Normally, the traffic light has 3 LEDs with hidden timer to control the vehicles at the 4-way intersection. Instead of letting pedestrians walk across the street freely, there is an another LED (beside 3-LED traffic light) with timer to indicate whether they can walk across. The traffic light takes external input from human's interaction by button and integrates to normal traffic light. The pedestrians can walk first when they see the extra LED turning on in the opposite streetview, then the vehicles can move in consecutive order. In case there is no external input, the traffic light works as normal. 
     
@@ -54,21 +54,29 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
     
     How it work (rules):
   
-2. Working mode and Stall mode
+2. ***Working mode and Stall mode***
     
-    Usually, the traffic light has its working mode during daylight and stall mode during night. The working mode is set from 4AM to 12AM, when a large amount of the vehicles driving across the road. It composes of normal traffic light and be compatible with pedestrian crossing LED. The rest of the day (12AM to 4AM), the traffic light is set in the stall mode,  
+    Usually, the traffic light has its working mode during daylight and stall mode during night. The working mode is set from 4AM to 12AM, when a large amount of the vehicles driving across the road. It composes of normal traffic light and be compatible with pedestrian crossing LED. In the rest of the day (12AM to 4AM), the traffic light is set in the stall mode, and only yellow LED is turned on without timer while other LEDs are blinking. The crossing LED is turned off during stall mode, and the pedestrians have to improvisionally crossing the street (negotiate with vehicles xD)
+    
+    We want to activate and deactivate stall mode by Real-time clock signal, and automatically switches at 12AM and 4AM.
 
-3. Brightness modifier depending on weather condition
+3. ***Auto-Brightness modification*** 
 
+    Normally in the daylight, the brightness of LEDs is set at 75% to reduce power consumption and prolong their life span. Depending on the bad weather condition, the brightness of the LEDs is modified by changing the input electrical current (voltage). For example, in the foggy and rainy weather, the brightness of LEDs is automatically changed to 100% by increasing the input current (voltage). Hence, vehicles and pedestrians will have better vision at the intersection during bad weather conditions. 
+    
+    We think humidity, rain, and light sensor will be employed to detect the weather conditions. 
 
-4. Automatic and manual changing timer
+4. ***Automatic and manual changing timer***
 
+    We aim to design the traffic light with flexible and fixed timer. In the fixed timer,   
 
-5. Memory in critical events
+5. ***Memory in critical events***
 
+    In the sudden and critical events, the traffic light has the backup memory to store the latest state of traffic light including timer, LEDs, brightness, automatic or manual mode, working or stall mode, etc. Basically, instead of interacting with processor, we can use DMA in the MCU to directly access the memory, bypassing the processor. Luckily, in the STM32F103RT6, we have internal SRAM and internal Flash memory to store data, and this feature relies solely on the design, architecture and coding. Hence, we do not need external peripherals.
+    
+6. ***Crossing red light detection***
 
-6. Crossing red light detection
-
+    An IR detector is attached to the 4 traffic lights at the intersection to detect the whether the vehicles cross the intersection when the red LED is on. 
 
 ### USEFUL LINKS 
 
@@ -78,7 +86,7 @@ Check other requirements periodically **[here](https://docs.google.com/spreadshe
 2. [STM32-base (ignore PlatformIO)](https://stm32-base.org/guides/)
 3. [Setup STM32 Long video](https://www.youtube.com/watch?v=xsYIh1sunso&list=PLdMwxwrniaL81t6xhA2no3skrAzPL5v7s&index=2&ab_channel=iforce2d)
 4. [Basic output pin LED explanation](https://www.youtube.com/watch?v=mOGqNwTjEGM&t=1226s&ab_channel=TerminalTwo)
-
+Memory in critical events
 ### REFERENCES
 
 \[1\]
